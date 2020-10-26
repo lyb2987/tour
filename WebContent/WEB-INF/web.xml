@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>tour</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>main</servlet-name>
+  	<servlet-class>controller.main.MainController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>main</servlet-name>
+  	<url-pattern>*.main</url-pattern>
+  </servlet-mapping>
+
+  
+  <servlet>
+  	<servlet-name>member</servlet-name>
+  	<servlet-class>controller.member.MemberController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>member</servlet-name>
+  	<url-pattern>*.mem</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>pkg</servlet-name>
+  	<servlet-class>controller.pkg.PackageController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>pkg</servlet-name>
+  	<url-pattern>*.pkg</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>reservation</servlet-name>
+  	<servlet-class>controller.rsv.ReservationController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>reservation</servlet-name>
+  	<url-pattern>*.rsv</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>payment</servlet-name>
+  	<servlet-class>controller.pay.PaymentController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>payment</servlet-name>
+  	<url-pattern>*.pay</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>qna</servlet-name>
+  	<servlet-class>controller.qnaBoard.QnaBoardController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>qna</servlet-name>
+  	<url-pattern>*.qna</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>faq</servlet-name>
+  	<servlet-class>controller.faqBoard.FaqBoardController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>faq</servlet-name>
+  	<url-pattern>*.faq</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>review</servlet-name>
+    <servlet-class>controller.review.ReviewController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>review</servlet-name>
+    <url-pattern>*.rv</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
